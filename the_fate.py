@@ -2,13 +2,10 @@
 # -*-coding:utf-8-*-
 """
  * Name        : the_fate
- * Author      : zylj
  * Datetime    : 2020/8/14 14:49
  * Package     : 
- * Description : 
+ * Description : no regret.
 """
-
-__author__ = 'Zhang Yang Li Jun'
 
 
 import random
@@ -21,8 +18,11 @@ def main():
 
 
 def test():
-    print("no regret.")
+    from choice import action
+    choice = random.randint(0, len(action)-1)
+    print(action[choice])
 
 
 if __name__ == '__main__':
     main()
+    # test()
